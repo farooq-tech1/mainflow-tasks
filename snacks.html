@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack Selection</title>
+    <style>
+        /* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8e1;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    background-color: #ff9800;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Snack container layout */
+.snack-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Individual snack item styles */
+.snack-item {
+    text-align: center;
+    width: 150px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.snack-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Image styling */
+.snack-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Snack name styling */
+.snack-item h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #ff9800;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #777;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delicious Snacks</h1>
+    </header>
+
+    <section class="snack-container">
+        <div class="snack-item">
+            <img src="c:\Users\Farooq Ahamed\Downloads\chips.jpeg" alt="Chips">
+            <h2>Chips</h2>
+        </div>
+        <div class="snack-item">
+            <img src="c:\Users\Farooq Ahamed\Downloads\cookies.jpeg" alt="Cookies">
+            <h2>Cookies</h2>
+        </div>
+        <div class="snack-item">
+            <img src="c:\Users\Farooq Ahamed\Downloads\popcorn.jpeg" alt="Popcorn">
+            <h2>Popcorn</h2>
+        </div>
+        <div class="snack-item">
+            <img src="c:\Users\Farooq Ahamed\Downloads\pretzels.jpeg" alt="Pretzels">
+            <h2>Pretzels</h2>
+        </div>
+        <div class="snack-item">
+            <img src="c:\Users\Farooq Ahamed\Downloads\fruit.jpeg" alt="Fruit">
+            <h2>Fruit</h2>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Snack Time</p>
+    </footer>
+</body>
+</html>
