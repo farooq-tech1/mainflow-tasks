@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mainflowtask2</title>
+    <style>
+        /* Reset default styling for list and remove underlines from links */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        div{
+         /* Full viewport height */
+        background-image: url('martback.jpg'); 
+        background-size: cover; 
+         background-position: center; 
+        background-repeat: no-repeat;
+      }
+
+/* Optional: Style for the content */
+.background-container {
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+           
+        /* Style the navigation bar */
+        nav {
+            background-color: #333;
+            font-family: Arial, sans-serif;
+            padding: 10px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        li {
+            position: relative;
+        }
+
+        a {
+            color: rgb(248, 246, 246);
+            text-decoration: none;
+            padding: 15px 25px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: rgb(85, 85, 84);
+        }
+
+        /* Dropdown menu styling */
+        ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgb(64, 61, 61);
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        li:hover > ul {
+            display: block;
+        }
+
+        ul ul li {
+            width: 100%;
+        }
+
+        /* Dropdown link hover effects */
+        ul ul li a {
+            padding: 12px 20px;
+            white-space: nowrap;
+        }
+
+        ul ul li a:hover {
+            background-color: #0f0909;
+        }
+
+        /* Main content area styles */
+
+        .content {
+            padding: 50px;
+            text-align: center;
+            background-color: #f1eaea;
+        }
+
+        h1 {
+            color: #0a0303;
+            font-size: 2em;
+        }
+
+        .section {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .section div {
+            background-color: #e8e0e0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+        }
+
+        .section div img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .section div h2 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a>
+            <ul>
+                <li><a href="fruits.html">FMART</a></li>
+            </ul>    
+            <li>
+                <a href="#">Groceries</a>
+                <!-- Dropdown menu for Groceries -->
+                <ul>
+                    <li><a href="fruits.html">fruits</a></li>
+                    <li><a href="vegetables.html">Vegetables</a></li>
+                    <li><a href="dairy.html">Dairy</a></li>
+                    <li><a href="beverages.html">Beverages</a></li>
+                    <li><a href="snacks.html">Snacks</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+                <ul>   
+                    <li><a href="cotact.html">Details</a></li>
+                    
+                </ul>    
+            </li>    
+        </ul>
+    </nav>
+
+    <!-- Main content area -->
+    <div class="content">
+        <h1>Welcome to FMart</h1>
+        <p>Your one-stop shop for all groceries and essentials!</p>
+
+        <!-- Groceries section -->
+        <div class="section">
+            <div>
+                <img src="fruits.jpg" alt="Fruits">
+                <h2>Fresh Fruits</h2>
+                <p>Shop a wide range of fruits.</p>
+                <a href="fruits.html" style="color: #333; text-decoration: none;">Shop Now</a>
+            </div>
+            <div>
+                <img src="vegetables.jpg" alt="Vegetables">
+                <h2>Fresh Vegetables</h2>
+                <p>Get the healthiest veggies.</p>
+                <a href="vegetables.html" style="color: #333; text-decoration: none;">Shop Now</a>
+            </div>
+            <div>
+                <img src="dairy.jpg" alt="Dairy">
+                <h2>Dairy Products</h2>
+                <p>Fresh milk, cheese, and more.</p>
+                <a href="dairy.html" style="color: #333; text-decoration: none;">Shop Now</a>
+            </div>
+            <div>
+                <img src="beverages.jpg" alt="Beverages">
+                <h2>Beverages</h2>
+                <p>Refreshing drinks to keep you hydrated.</p>
+                <a href="beverages.html" style="color: #333; text-decoration: none;">Shop Now</a>
+            </div>
+            <div>
+                <img src="snacks.jpg" alt="Snacks">
+                <h2>Snacks & Treats</h2>
+                <p>Delicious snacks for every craving.</p>
+                <a href="snacks.html" style="color: #333; text-decoration: none;">Shop Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 FMart | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
