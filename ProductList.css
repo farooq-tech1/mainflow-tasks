@@ -1,0 +1,12 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  

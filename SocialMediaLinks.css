@@ -1,0 +1,14 @@
+.social-media-links {
+    margin: 30px 0;
+  }
+  
+  .social-logo {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+  }
+  
+  .social-logo:hover {
+    opacity: 0.7;
+  }
+  

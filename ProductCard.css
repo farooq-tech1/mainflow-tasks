@@ -1,0 +1,38 @@
+.product-card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-card h3 {
+    margin: 15px 0;
+  }
+  
+  .product-card p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .buy-button {
+    background-color: #ff4d4d;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .buy-button:hover {
+    background-color: #ff3333;
+  }
+  

@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .header .logo {
+    width: 150px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  nav li {
+    margin: 0 15px;
+  }
+  
+  nav a {
+    color: white;
+    font-size: 18px;
+  }
+  
